@@ -1,4 +1,6 @@
 import React from 'react';
+import FilmsList from '../components/FilmsList.js';
+
 
 class ShowtimesBox extends React.Component {
   constructor(props){
@@ -20,15 +22,13 @@ class ShowtimesBox extends React.Component {
         <FilmsList films={this.state.films}/>
       </div>
       <div>
-        <button onClick={this.link}>Ticket Office</button>
+        <button onClick={this.link}>See showtimes</button>
       </div>
 
     </div>
+    )
+  };
 
-  )
-};
 }
-
-export default FilmBox;
 }
 export default ShowtimesBox;
